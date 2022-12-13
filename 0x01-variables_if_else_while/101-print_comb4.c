@@ -11,8 +11,7 @@ int main(void)
 	int n;
 	int j;
 
-	for (i = 48; i < 58; i++)
-
+	for (i = 48; n < 58; i++)
 	{
 		for (n = 48; n < 58; n++)
 		{
@@ -25,17 +24,19 @@ int main(void)
 						putchar(i);
 						putchar(n);
 						putchar(j);
+					if (i == 55 && n == 56 && j == 57)
+					{
+						break;
+					}
 
-						if (i== 55; && n == 56 && j == 57)
-						{
-							break;
-						}
-
-						putchar(',');
-						putchar(' ');
+					putchar(',');
+					putchar(' ');
 					}
 				}
 			}
 		}
 	}
+
+	putchar('\n');
+	return (0);
 }
