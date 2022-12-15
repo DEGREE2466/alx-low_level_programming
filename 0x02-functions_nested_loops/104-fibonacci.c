@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include "main.h"
 /**
  * numLength - returns the length of spring
  * @num: operand number
