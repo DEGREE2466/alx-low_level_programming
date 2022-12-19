@@ -1,11 +1,11 @@
 #include "main.h"
 /**
- * _strlen - Finds the length of a string.
- * @s:String pointer to the string whose length is to be found
- * Return: returns the length of the string.
+ * _strlen - returns the length of a string
+ * @s: string
+ * Return: length
  */
 
-int_strlen(char *s)
+int _strlen(char *s)
 {
 	int p = o;
 	/ increment up to when the last character is NULL, \0 /
