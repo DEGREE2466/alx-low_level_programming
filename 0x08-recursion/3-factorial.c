@@ -1,14 +1,16 @@
 /*
- * File: 3-factorial.c
+ * 3-factorial.c
  * Auth: degree2466
  */
+
+#include "main.h"
 
 /**
  * factorial - returns the factorial of a given number
  * @n: the number to find the factorial of
  *
  * Return: if n > 0 - the factorial of n
- *	   if n < 0 - 1 to indicate the erro
+ *	   if n < 0 - 1 to indicate the error
  */
 
 int factorial(int n)
