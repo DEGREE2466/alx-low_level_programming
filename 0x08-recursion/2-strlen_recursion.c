@@ -1,15 +1,15 @@
 /*
  * File: 2-strlen_recursion.c
- * Auth: degree2466
+ * Auth: Degree2466
  */
 
 #include "main.h"
 
 /**
- * _strlen_recursion - returns the length of a string
- * @s: the string to be measured
+ * _strlen_recursion - Returns the length of a string
+ * @s: The string to be measured
  *
- * Return: the length of the string
+ * Return: The length of the string
  */
 
 int _strlen_recursion(char *s)
