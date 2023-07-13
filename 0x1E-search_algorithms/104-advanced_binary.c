@@ -40,21 +40,20 @@ int advanced_binary(int *array, size_t size, int value)
 
 	printf("Searching in array: ");
 	print_array(array, size);
-	mid = size / 2;
+	mid = (size - 1) / 2;
 
 	if (value == array[mid])
 	{
-		if ((mid == 0) || (array[mid - 1] != value))
+		if ((mid > 0 && array[mid - 1] != value) || (mid == 0))
 			return (mid);
-		return (advanced_binary(array, mid + 1, value));
+		return (advanced_binary(array, size - (mid + 1), value));
 	}
 	else if (value < array[mid])
-		return (advanced_binary(array, mid, value));
+		return (advanced_binary(array, size - (mid + 2), value));
 
 	index = advanced_binary(
-		array + mid + 1, size - mid - 1, value);
+		array + mid + 1, size - (mid + 1), value);
 	if (index > -1)
-		return (mid + 1) + index;
+		return ((mid + 1) + index);
 	return (-1);
 }
-
